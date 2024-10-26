@@ -10,3 +10,13 @@
 
 }
 
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+body{
+    background: black;
+    color: rgb(12,31,141);
+}
+
