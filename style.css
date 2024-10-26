@@ -24,3 +24,53 @@ body{
     color: rgb(12,31,141);
 }
 
+/*---navigation Bar Styling---*/
+
+.header{
+    position: fixed;/*Fixes the header at the top of the page*/
+    top:0;
+    left:0;
+    width:100%;
+    padding:2rem 9%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;  /* Spreads header items evenly */
+    align-items: center; 
+    z-index: 100;  /* Ensures header stays on top */
+    transition: width 3s;  /* Smooth animation for width changes */
+}
+
+.logo {
+    position: relative; 
+    font-size: 2.5rem;  
+    color: #100ab9; 
+    font-weight: 600;  
+}
+
+.navbar {
+    position: relative; 
+}
+
+.navbar a {
+    font-size: 1.6rem; 
+    font:bold;
+    color: #0b23d8; 
+    font-weight: 500;  
+    margin-left: 3.5rem;  /* Adds space between nav links */
+    transition: .3s;  /* Smooth transition for hover effect */
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #3b76d3;  /* Color change on hover or active state */
+    border-bottom: 3px solid #3e4ec4;  /* Adds underline effect on hover/active */
+}
+
+#menu-icon {
+    position: relative;  /* Positions menu icon relative to header */
+    font-size: 3.6rem;  
+    color: #0a33b9;  
+    cursor: pointer; 
+    display: none;  /* Hidden on larger screens, shown on smaller screens */
+}
+
