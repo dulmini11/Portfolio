@@ -143,7 +143,9 @@ section {
 }
 .color{
     color: #144c9b;
-    font-family:sans-serif;
+    font-family:poppins;
+    font-size: 30px;
+    letter-spacing: 5px;
 }
 
 /* Main content block styling */
@@ -183,12 +185,13 @@ textarea {
     padding: 3%;
     margin: 2% 8%;
     font-weight: 500;
+    color: rgb(214, 221, 243);
 }
 
 /*Validity Pseudo-Class*/
 /* Validity styling for input */
 input:valid {
-    background-color: #64768e;
+    background-color: #4132b4;
     outline: 2px solid rgba(35, 1, 80, 0.5);
     border: none;
     border-radius: 5px; 
@@ -207,7 +210,7 @@ input:not(:valid) {
 
 .btn-send {
     background: #232752;
-    color: #fcfcfd;
+    color: #8c8cd0;
     width: 140px;
     height: 60px;
     font-weight: 700;
@@ -221,5 +224,11 @@ input:not(:valid) {
     background: #262564;
 }
 
-
+.contact-image {
+    width: 200px; 
+    transition: transform 0.6s ease; /* Smooth transition */
+}
+.contact-image:hover {
+    transform: translateY(60px); /* Move the image up on hover */
+}
 
