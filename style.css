@@ -224,11 +224,5 @@ input:not(:valid) {
     background: #262564;
 }
 
-.contact-image {
-    width: 200px; 
-    transition: transform 0.6s ease; /* Smooth transition */
-}
-.contact-image:hover {
-    transform: translateY(60px); /* Move the image up on hover */
-}
+
 
