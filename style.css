@@ -16,12 +16,13 @@
 
 html{
     font-size: 62.5%;
-    overflow: hidden;
+    
 }
 
 body{
     background: black;
     color: rgb(12,31,141);
+    overflow-y: auto; 
 }
 
 /*---navigation Bar Styling---*/
@@ -225,4 +226,67 @@ input:not(:valid) {
 }
 
 
+/* About page css */
 
+body > .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient( rgb(0, 0, 0), rgb(11, 81, 116));
+    background-size: 1500px 900px;
+    padding-bottom: 6rem;
+}
+
+body > .about > .heading {
+    position: relative;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.about span {
+    color: rgb(155, 163, 186);
+}
+/* About Image */
+.about-img {
+    width: 300px; 
+    height: 300px;
+    position: relative;
+    border-radius: 50%; 
+    overflow: hidden; 
+    border: 4px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 50%; 
+    transition: transform 0.8s ease; 
+}
+
+/* Zoom effect on hover */
+.about-img:hover img {
+    transform: scale(1.3); 
+}
+
+.about-content {
+    font-weight: 500;
+    font-family:"Fira+Sans" , sans-serif;
+    text-align: center;  
+}
+.about-content   {
+    position: relative;
+    display: inline-block;
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    color: rgba(234, 234, 234, 0.95);
+    position: relative;
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
