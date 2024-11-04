@@ -206,7 +206,7 @@ section {
 .color{
     color: #144c9b;
     font-family:poppins;
-    font-size: 30px;
+    font-size: 70px;
     letter-spacing: 5px;
 }
 
@@ -240,9 +240,9 @@ section {
 /* Styling input and textarea with semi-transparent background */
 input,
 textarea {
-    background-color:  rgba(35, 1, 80, 0.5);/* semi-transparent */
+    background: linear-gradient(135deg, #1e617d,#0e2e4f, #011529); 
     border-radius: 5px;
-    outline: 2px solid rgb(4, 35, 145);
+    outline: 2px solid rgb(220, 222, 228);
     width: 330px;
     padding: 3%;
     margin: 2% 8%;
@@ -253,7 +253,7 @@ textarea {
 /*Validity Pseudo-Class*/
 /* Validity styling for input */
 input:valid {
-    background-color: #4132b4;
+    background: linear-gradient(135deg, #060426,#5c8ea4);
     outline: 2px solid rgba(35, 1, 80, 0.5);
     border: none;
     border-radius: 5px; 
@@ -264,14 +264,14 @@ input:valid {
 input:not(:valid) {
     
     background-color: rgba(35, 1, 80, 0.5);
-    outline: 2px solid rgb(4, 35, 145);
+    outline: 2px solid rgb(220, 220, 220);
     border: none;
     border-radius: 5px;
     
 }
 
 .btn-send {
-    background: #232752;
+    background: linear-gradient(135deg, #1e617d,#0e2e4f, #011529); 
     color: #8c8cd0;
     width: 140px;
     height: 60px;
@@ -283,7 +283,7 @@ input:not(:valid) {
 }
 
 .btn-send:hover {
-    background: #262564;
+    background: linear-gradient(135deg, #1e617d,#0d6ccb); 
     transform: scale(1.05);/* Adds a subtle zoom effect to the button on hover */
 }
 
