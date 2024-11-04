@@ -57,14 +57,29 @@ body{
     font:bold;
     color: #0b23d8; 
     font-weight: 500;  
-    margin-left: 3.5rem; 
     transition: .3s;  /* Smooth transition for hover effect*/
+}
+
+.navbar a:not(.active) {
+    opacity: 0.7;
+}
+
+.navbar a + a {
+    margin-left: 30px;
 }
 
 .navbar a:hover,
 .navbar a.active {
     color: #3b76d3;  
     border-bottom: 3px solid #3e4ec4;  /* Adds underline effect on hover/active */
+}
+
+.navbar a:first-of-type {
+    font-weight: bold;
+}
+
+.navbar > a {
+    padding: 5px;
 }
 
 #menu-icon {
@@ -277,13 +292,22 @@ input:not(:valid) {
     font-weight: 700;
     border: none;
     border-radius: 0.5rem;
-    cursor: pointer;    margin: 2% 8%;
+    cursor: pointer;    
+    margin: 10% 8%;
 }
 
 .btn-send:hover {
     background: linear-gradient(135deg, #1e617d,#0d6ccb); 
 
     transform: scale(1.05);/* Adds a subtle zoom effect to the button on hover */
+}
+
+[type="text"] {
+    border: 1px solid #d91616;
+}
+
+[type="email"] {
+    color: #230fd4;
 }
 
 
@@ -320,7 +344,7 @@ body > .about > .heading {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 .about-img img {
     width: 100%;
@@ -355,6 +379,19 @@ body > .about > .heading {
 
 /***********blog page css********8*/
 
+.content-section .heading {
+    font-size: 2.5rem; 
+    font-weight: bold; 
+    color: #333; 
+    text-align: center; 
+    position: relative; 
+    margin-top: 5rem;
+}
+
+.content-section .heading span {
+    color: #0050db;
+    position: relative; 
+}
 
 /* Content section with project and hobby boxes in two rows */
 .content-section {
@@ -362,13 +399,17 @@ body > .about > .heading {
     flex-direction: column; /* Stack rows vertically */
     align-items: center;
     gap: 10rem; 
-    margin-top: 20rem;
+    margin-top: 5rem;
     padding: 2rem;
 }
 
 .box-container {
     display: flex;
     gap: 10rem; /* Space between boxes in each row */
+}
+
+.box-container div:nth-child(odd) {
+    background:linear-gradient(135deg, #1cdd76, #052e57, #1e617d);
 }
 
 /* Box Styling */
@@ -379,7 +420,7 @@ body > .about > .heading {
     padding: 1rem;
     border: 1px solid #0c19c6;
     border-radius: 10px;
-    background: linear-gradient(135deg, #1e617d, #052e57);
+    background: linear-gradient(135deg, #1e617d, #62c2d3, #052e57);
     color: #fff;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -390,9 +431,9 @@ body > .about > .heading {
 }
 
 .project-image, .hobby-image {
-    max-width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 10px; /* Add space below images */
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 10px; 
 }
 
 /* Additional hover effects and animation */
@@ -401,11 +442,34 @@ body > .about > .heading {
     animation: boxHover 0.5s ease-in-out;
 }
 
+/* footer design */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 9%;
+    background:  rgb(1, 9, 40);
+}
+
+.footer-text {
+    position: relative;
+}
+
+.footer-text p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fffffe;
+}
+.footer-text p::before {
+    content: "© ";
+}
+
+
 @keyframes boxHover {
     0% { transform: scale(1); }
     100% { transform: scale(1.05); }
 }
-
 
 @media (max-width: 768px) {
     .home-content h1 {
